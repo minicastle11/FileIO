@@ -21,7 +21,7 @@ public class UsingDirectBuffering {
         byte[] buffer= new byte[2048]; // 2KB
         while (inputStream.read(buffer)!=-1){} // 75 ms
         long duration = StopWatch.stop();
-        System.out.println(duration);
+        System.out.println(duration + " milsec");
         
         inputStream.close();
 
@@ -34,7 +34,7 @@ public class UsingDirectBuffering {
         while (inputStream2.read(buffer2)!=-1){} // 90 ms
 
         long duration2 = StopWatch.stop();
-        System.out.println(duration2);
+        System.out.println(duration2 + " milsec");
         
         inputStream2.close();
 
